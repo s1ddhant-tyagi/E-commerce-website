@@ -35,7 +35,7 @@ body
 {
     display: flex;
     align-items: center;
-    font-family: 'Baloo Bhai 2', cursive;
+    font-family: Poppins, sans-serif;
 
 }
 
@@ -375,6 +375,9 @@ footer hr
 
     
 }
+
+/* --------------MEDIA QUERY FOR disappearing icons--------------  */
+
 @media only screen and (max-width:1030px)
 {
     .disappear
@@ -382,6 +385,9 @@ footer hr
         display: none;
     }
 }
+
+/* --------------MEDIA QUERY FOR flex basis 100--------------  */
+
 
 @media only screen and (max-width:550px)
 {
@@ -393,4 +399,75 @@ footer hr
     {
         text-align: center;
     }
+}
+
+
+/* ************************CONTACT US PAGE ****************************/
+.col6 img
+{
+    width: 50px;
+}
+
+.col6 h3
+{
+    margin-bottom: 20px;
+}
+
+.col6 span
+{
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.col6
+{
+    background-color: #f0f1f0;
+    flex-basis: 30%;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.contactrow
+{
+    margin: 30px 10px;
+}
+
+.form
+{
+    background-color: #f0f1f0;
+    width: 400px;
+    padding: 30px 10px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px gray;
+
+}
+
+.form input
+{
+    display: block;
+    margin: 10px auto;
+    /* font-size: 20px; */
+}
+
+.form label
+{
+    display: block;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.input
+{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
 }

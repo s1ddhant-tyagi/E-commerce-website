@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGATION BAR -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul id="dropbox">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Account</a></li> 
+                </ul>
+            </nav>
+            <img src="images/shopping-cart.png" alt="" class="cart">
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    
+    <div class="middle">
+        <!--------------- CONTACT TEMPLATES -------------->
+        <div class="row contactrow">
+            <div class="col6">
+                <img src="images/loclogo.png" class="loclogo">
+                <h3>Gurugram</h3>
+                <span>Phone No. 9876438990</span>
+                <span>Lakshmi Nagar</span>
+                <span>Haryana 500009</span>
+            </div>
+            <div class="col6">
+                <img src="images/loclogo.png" class="loclogo">
+                <h3>Bengaluru</h3>
+                <span>Phone No. 9876438992</span>
+                <span>Raj Nagar</span>
+                <span>Karnataka 530309</span>
+            </div>
+            <div class="col6">
+                <img src="images/loclogo.png" class="loclogo">
+                <h3>Ghaziabad</h3>
+                <span>Phone No. 9876438993</span>
+                <span>Roshan Nagar</span>
+                <span>Uttar Pradesh 510109</span>
+            </div>
+            <div class="col6">
+                <img src="images/loclogo.png" class="loclogo">
+                <h3>Visakhapatnam</h3>
+                <span>Phone No. 9876438994</span>
+                <span>Parvathi Nagar</span>
+                <span>Haryana 500209</span>
+            </div>
+            <div class="col6">
+                <img src="images/loclogo.png" class="loclogo">
+                <h3>Chennai</h3>
+                <span>Phone No. 9876438995</span>
+                <span>Nandini Nagar</span>
+                <span>Tamilnadu 520500</span>
+            </div>
+            <div class="col6">
+                <img src="images/loclogo.png" class="loclogo">
+                <h3>Hyderabad</h3>
+                <span>Phone No. 9876438996</span>
+                <span>Mohan Nagar</span>
+                <span>Telangana 500004</span>
+            </div>
+        </div>
+
+        <!----------------- GET IN TOUCH ---------------->
+        <div class="touch">
+            <h2 class="title">Fill the form and we will contact you</h2>
+            <div class="form">
+                <form action="">
+                    <input type="username" placeholder="Name" id="" class="input">
+                    <input type="phone" placeholder="Contact number" class="input">
+                    <input type="email" placeholder="Email id" class="input">
+                    <label for="">Enter your query:</label>
+                    <textarea name="" id="" cols="30" rows="10" class="input"></textarea>
+                </form>
+            </div>
+        </div>
+            
+    </div>
+
+    <div class="brands">
+        <div class="small-container">
+            <h2 class="title">Sponsers</h2>
+            <div class="row">
+                <div class="col5">
+                    <img src="images/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="images/logo-oppo.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="images/logo-paypal.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+                <div class="col5">
+                    <img src="images/logo-godrej.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------- FOOTER ------------>
+    <footer>
+        <div class="conatainer">
+            <div class="row">
+                <div class="footercol1 footercol">
+                    <h3>Download Our App</h3>
+                    <p>Apps are available for android and ios mobile phones</p>
+                    <div class="applogo">
+                        <img src="images/app-store.png" alt="">
+                        <img src="images/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footercol2 footercol">
+                    <img src="images/logo.png" class="footerlogo">
+                    <p>
+                        We aim to provide best products keeping in mind the budget of LPU students.
+                    </p>
+                </div>
+                <div class="footercol3 footercol">
+                    <h3>
+                        Useful Links
+                    </h3>
+                    <ul>
+                        <li>Products</li>
+                        <li>Contact us</li>
+                        <li>About us</li>
+                        <li>Account</li>
+                    </ul>
+                </div>
+                <div class="footercol4 footercol">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>Copyright 2020 - Siddhant Tyagi</p>
+        </div>
+    </footer>
+
+    <script>
+        var dropbox = document.getElementById("dropbox");
+        dropbox.style.maxHeight = "0px";
+        function menutoggle()
+        {
+            if(dropbox.style.maxHeight == "0px")
+                dropbox.style.maxHeight = "200px";
+            else
+                dropbox.style.maxHeight = "0px";
+        }
+    </script>
+
+</body>
+</html>
