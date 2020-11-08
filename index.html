@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -18,7 +20,7 @@
                 <img src="images/logo.png" alt="logo">
             </div>
             <nav>
-                <ul>
+                <ul id="dropbox">
                     <li><a href="">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="">About us</a></li>
@@ -27,6 +29,7 @@
                 </ul>
             </nav>
             <img src="images/shopping-cart.png" alt="" class="cart">
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
     <div class="middle">
@@ -39,14 +42,14 @@
                     <a href="" class="btn">Explore now &#8594;</a>
                 </div>
                 <div class="col2">
-                    <img src="images/shopping-bag (1).png" alt="">
+                    <img src="images/shopping-bag (1).png" class="disappear" alt="">
                 </div>
                 <div class="col2">
                     <img src="images/girl-163698_1280.jpg" alt="">
                 </div>
                 
                 <div class="col2">
-                    <img src="images/smartphone.png" alt="">
+                    <img src="images/smartphone.png" class="disappear" alt="">
                 </div>
             </div>
         </div>
@@ -234,6 +237,7 @@
 
         <div class="brands">
             <div class="small-container">
+                <h2 class="title">Sponsers</h2>
                 <div class="row">
                     <div class="col5">
                         <img src="images/logo-coca-cola.png" alt="">
@@ -254,5 +258,70 @@
             </div>
         </div>
     </div>
+
+    <!----------- FOOTER ------------>
+    <footer>
+        <div class="conatainer">
+            <div class="row">
+                <div class="footercol1 footercol">
+                    <h3>Download Our App</h3>
+                    <p>Apps are available for android and ios mobile phones</p>
+                    <div class="applogo">
+                        <img src="images/app-store.png" alt="">
+                        <img src="images/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footercol2 footercol">
+                    <img src="images/logo.png" class="footerlogo">
+                    <p>
+                        We aim to provide best products keeping in mind the budget of LPU students.
+                    </p>
+                </div>
+                <div class="footercol3 footercol">
+                    <h3>
+                        Useful Links
+                    </h3>
+                    <ul>
+                        <li>Products</li>
+                        <li>Contact us</li>
+                        <li>About us</li>
+                        <li>Account</li>
+                    </ul>
+                </div>
+                <div class="footercol4 footercol">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>
+                            <a href="">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>Copyright 2020 - Siddhant Tyagi</p>
+        </div>
+    </footer>
+
+    <script>
+        var dropbox = document.getElementById("dropbox");
+        dropbox.style.maxHeight = "0px";
+        function menutoggle()
+        {
+            if(dropbox.style.maxHeight == "0px")
+                dropbox.style.maxHeight = "200px";
+            else
+                dropbox.style.maxHeight = "0px";
+        }
+    </script>
+
 </body>
 </html>

@@ -24,15 +24,19 @@ body
     /* box-shadow: 0px 2px 5px #383737; */
 }
 
-.logo img
-{
-    width: 125px;
+.logo img {
+    height: 44px;
+    margin: 5px 0px 0px 0px; 
+    margin-left: 30px;
+    cursor: pointer;
 }
 
 .navbar
 {
     display: flex;
     align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+
 }
 
 .cart
@@ -40,7 +44,8 @@ body
     width: 30px;
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
-    margin-right: 10px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 nav
@@ -54,18 +59,26 @@ nav ul
 {
     display: inline-block;
     list-style: none;
+    text-align: center;
 }
 
 nav ul li
 {
     display: inline-block;
-    margin-right: 50px;
+    width: 120px;
 }
 
 nav ul li a
 {
     text-decoration: none;
     color: #e2e2e2;
+    padding: 10px;
+    transition: font-size 0.2s;
+}
+
+nav ul li a:hover
+{
+    font-size: 17px;
 }
 
 .middle
@@ -86,7 +99,7 @@ nav ul li a
     -webkit-filter: invert(100%); /* Safari/Chrome */
     filter: invert(100%);
     width:250px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .row
@@ -117,7 +130,7 @@ nav ul li a
     transition: all 0.4s;
 }
 
-.btn:hover, nav li:hover
+.btn:hover
 {
     background-color: #ff533b;
     color: white;
@@ -173,7 +186,7 @@ nav ul li a
 {
     flex-basis: 25%;
     padding: 10px;
-    min-width: 150px;
+    min-width: 227px;
     margin-bottom: 50px;
     transition: transform 0.5s;
     cursor: pointer;
@@ -226,9 +239,13 @@ h4
     transform: translateY(-5px);
 }
 
-.brands
+.brands {
+    margin: 20px 0;
+}
+
+.brands .title
 {
-    margin: 62px auto;
+    margin: 0 auto 20px;
 }
 
 .col5
@@ -247,4 +264,133 @@ h4
 .col5 img:hover
 {
     filter: grayscale(0%);
+}
+
+/*----------------- FOOTER------------------- */
+
+footer
+{
+    background-color: #1f1f1f;
+    padding: 20px 0pc;
+}
+
+footer .row
+{
+    justify-content: space-around;
+}
+
+.footercol1 img
+{
+    max-width: 125px;
+    margin: 20px 0;
+}
+
+footer 
+{
+    color: white;
+    text-align: center;
+}
+
+footer h3
+{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+footer ul, footer a
+{
+    list-style: none;
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 13px;
+    cursor: pointer;
+}
+footer p
+{
+    font-size: 11px;
+    color: #bfbfbf;
+}
+footer .footerlogo
+{
+    margin-bottom: 10px;
+}
+.footercol2 img
+{
+    max-width: 100px;
+}
+
+footer hr
+{
+    color: white;
+    /* border: none; */
+    height: 1px;
+    margin: 10px 30px;
+}
+
+.footercol
+{
+    /* min-width: 250px; */
+}
+
+
+.menu-icon
+{
+    width: 28px;
+    margin: 0 20px 0 10px;
+    display: none;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    
+}
+
+
+
+/* --------------MEDIA QUERY FOR MENU--------------  */
+
+@media only screen and (max-width:862px)
+{
+    nav ul 
+    {
+        position: absolute;
+        top:57px;
+        left: 0px;
+        width: 100%;
+        background-color: #1f1f1f;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li 
+    {
+        display: block;
+        margin: 10px 0;
+        margin-right: 50px;
+    }
+
+    .menu-icon
+    {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+}
+@media only screen and (max-width:1030px)
+{
+    .disappear
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:550px)
+{
+    .col2, .col3. .col4
+    {
+        flex-basis: 100%;
+    }
+    .row
+    {
+        text-align: center;
+    }
 }
